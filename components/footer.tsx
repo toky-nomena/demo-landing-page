@@ -6,40 +6,44 @@ export default function Footer() {
     <footer className="border-t">
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
-          <h2 className="font-bold">FJKM Québec</h2>
+          <h3 className="inline-block pb-2 text-sm font-medium border-b-4 border-blue-500">
+            FJKM Québec
+          </h3>
           <p className="text-sm text-muted-foreground">
             Église protestante reformée au Québec, Canada
           </p>
         </div>
         <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-2">
           <div className="space-y-4">
-            <h3 className="text-sm font-medium">Nous contacter</h3>
+            <h3 className="inline-block pb-2 text-sm font-medium border-b-4 border-blue-500">
+              Nous contacter
+            </h3>
             <ul className="space-y-3 text-sm">
               <li>
-                Courriel:{" "}
-                <span className="font-semibold">contact@fjkm-quebec.com</span>
+                Courriel: <span>contact@fjkm-quebec.com</span>
               </li>
               <li>
-                Téléphone:{" "}
-                <span className="font-semibold">+1 (514) 123-4567</span>
+                Téléphone: <span>+1 (514) 123-4567</span>
               </li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-sm font-medium">Nous suivre</h3>
+            <h3 className="inline-block pb-2 text-sm font-medium border-b-4 border-blue-500">
+              Nous suivre
+            </h3>
             <div className="flex space-x-4">
               <Link
                 href="https://instagram.com/fjkm-quebec"
-                className="transition-colors text-muted-foreground text-[#E1306C] hover:text-[#C13584]"
+                className="transition-colors text-muted-foreground"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-5 h-5 text-[#E1306C] hover:text-[#C13584]" />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link
                 href="https://facebook.com/fjkm-quebec"
-                className="transition-colors text-muted-foreground text-[#1877F2] hover:text-[#0866FF]"
+                className="transition-colors text-muted-foreground"
               >
-                <Facebook className="w-5 h-5" />
+                <Facebook className="w-5 h-5 text-[#1877F2] hover:text-[#0866FF]" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link

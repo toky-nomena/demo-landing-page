@@ -1,9 +1,8 @@
 "use client";
 
-import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
@@ -34,7 +33,7 @@ export function Navbar() {
                 href={item.href}
                 className={`relative flex items-center text-sm font-medium transition-colors hover:text-foreground/80 ${
                   pathname === item.href
-                    ? "text-foreground before:absolute before:-bottom-5 before:h-0.5 before:w-full before:bg-blue-500 before:shadow-[0_0_8px_2px_rgba(59,130,246,0.5)] before:opacity-70"
+                    ? "text-foreground before:absolute before:-bottom-5 before:h-0.5 before:w-full before:bg-blue-500 before:shadow-[0_0_10px_2px_rgba(59,130,246,0.5)] before:opacity-70"
                     : "text-foreground/60"
                 }`}
               >

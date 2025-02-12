@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ButtonLink } from "./magicui/badge";
 
 export default function Hero() {
   return (
@@ -14,15 +15,10 @@ export default function Hero() {
           confession protestante réformée du Québec, Canada.
         </p>
       </div>
-      <div className="flex gap-4">
-        <Link
-          href="/activities"
-          className="inline-flex justify-center items-center px-8 py-2 h-11 text-sm font-medium rounded-md transition-colors ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90"
-        >
-          Explorer les activités
-          <ArrowRight className="ml-2 w-4 h-4" />
-        </Link>
-      </div>
+      <ButtonLink href="/activities">
+        Explorer les activités
+        <ArrowRight className="ml-2 w-4 h-4" />
+      </ButtonLink>
     </section>
   );
 }
