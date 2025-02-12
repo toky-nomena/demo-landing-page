@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -9,19 +9,19 @@ export default function Hero() {
           FJKM QUEBEC
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          FJKM Québec, also known as the Église reformée de Madagascar à Québec,
-          is a non-profit organization of Protestant Reformed confession in
-          Quebec, Canada.
+          Également connue sous le nom d'Église Protestante Réformée de
+          Madagascar à Québec, est une organisation à but non lucratif de
+          confession protestante réformée du Québec, Canada.
         </p>
       </div>
       <div className="flex gap-4">
-        <Button size="lg">
+        <Link
+          href="/activities"
+          className="inline-flex justify-center items-center px-8 py-2 h-11 text-sm font-medium rounded-md transition-colors ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90"
+        >
           Explorer les activités
           <ArrowRight className="ml-2 w-4 h-4" />
-        </Button>
-        <Button variant="outline" size="lg">
-          Nous contacter
-        </Button>
+        </Link>
       </div>
     </section>
   );

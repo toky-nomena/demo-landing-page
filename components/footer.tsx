@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className="border-t">
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
-          <h2 className="font-bold">FJKM Quebec</h2>
+          <h2 className="font-bold">FJKM Québec</h2>
           <p className="text-sm text-muted-foreground">
-            Church in Quebec, Canada
+            Église protestante reformée au Québec, Canada
           </p>
         </div>
         <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-2">
@@ -16,11 +16,11 @@ export default function Footer() {
             <h3 className="text-sm font-medium">Nous contacter</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                Email:{" "}
+                Courriel:{" "}
                 <span className="font-semibold">contact@fjkm-quebec.com</span>
               </li>
               <li>
-                Telephone:
+                Téléphone:{" "}
                 <span className="font-semibold">+1 (514) 123-4567</span>
               </li>
             </ul>
@@ -29,11 +29,11 @@ export default function Footer() {
             <h3 className="text-sm font-medium">Nous suivre</h3>
             <div className="flex space-x-4">
               <Link
-                href="https://twitter.com/fjkm-quebec"
+                href="https://instagram.com/fjkm-quebec"
                 className="transition-colors text-muted-foreground text-[#E1306C] hover:text-[#C13584]"
               >
                 <Instagram className="w-5 h-5" />
-                <span className="sr-only">Twitter</span>
+                <span className="sr-only">Instagram</span>
               </Link>
               <Link
                 href="https://facebook.com/fjkm-quebec"
@@ -47,7 +47,7 @@ export default function Footer() {
                 className="transition-colors text-muted-foreground hover:text-primary"
               >
                 <Youtube className="w-5 h-5 text-[#FF0000] hover:text-[#CC0000]" />
-                <span className="sr-only">Youtube</span>
+                <span className="sr-only">YouTube</span>
               </Link>
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
       <div className="container py-6 border-t">
         <p className="text-sm text-center text-muted-foreground">
-          {new Date().getFullYear()} FJKM Quebec, Inc. All rights reserved.
+          {new Date().getFullYear()} FJKM Québec, Inc. Tous droits réservés.
         </p>
       </div>
     </footer>
