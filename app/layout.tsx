@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { ReactNode } from "react";
-import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import type { Metadata } from "next";
 
 import MouseMoveEffect from "@/components/ui/mouse-move-effect";
@@ -9,7 +9,7 @@ import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Bg } from "@/components/ui/bg";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Noto_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "FJKM Quebec - Church",
@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-background text-foreground antialiased`}
+        className={`${font.className} bg-background text-foreground antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <MouseMoveEffect />
